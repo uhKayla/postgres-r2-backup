@@ -1,5 +1,5 @@
 {
-  "name": "mysql-r2-backup",
+  "name": "postgres-r2-backup",
   "module": "src/index.ts",
   "type": "module",
   "scripts": {

@@ -2,7 +2,7 @@ FROM oven/bun:alpine
 
 WORKDIR /app
 
-RUN apk add --update --no-cache mysql-client mariadb-connector-c
+RUN apk add --update --no-cache postgresql-client
 
 COPY package.json .
 COPY bun.lockb .
