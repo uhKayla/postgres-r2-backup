@@ -2,7 +2,8 @@ FROM oven/bun:alpine
 
 WORKDIR /app
 
-RUN apk add --update --no-cache postgresql-client
+RUN echo @edge http://dl-cdn.alpinelinux.org/alpine/edge/main >> /etc/apk/repositories && \
+    apk add --no-cache postgresql16-client@edge
 
 COPY package.json .
 COPY bun.lockb .
